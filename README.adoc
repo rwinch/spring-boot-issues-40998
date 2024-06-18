@@ -4,4 +4,12 @@ https://issues.apache.org/jira/browse/MJAVADOC-656
 
 https://github.com/gradle/gradle/issues/1803
 
-https://docs.spring.io/spring-security/site/docs/6.3.x/api/[Java APIs,role=link-external, window=_blank]
+[source,bash]
+----
+mvn javadoc:javadoc
+----
+
+[source,bash]
+----
+./gradlew javadoc
+----
