@@ -1,0 +1,39 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>my-app</artifactId>
+  <version>1</version>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+      <version>3.3.0</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.7.1-SNAPSHOT</version>
+        <configuration>
+          <doclint>accessibility,html,reference,syntax</doclint>
+          <show>package</show>
+          <quiet>true</quiet>
+          <links>
+            <link>https://docs.spring.io/spring-boot/3.3/api/java/</link>
+            <link>https://docs.oracle.com/en/java/javase/17/docs/api/</link>
+          </links>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>javadoc-snapshot</id>
+      <url>https://repository.apache.org/content/repositories/snapshots</url>
+    </pluginRepository>
+  </pluginRepositories>
+</project>

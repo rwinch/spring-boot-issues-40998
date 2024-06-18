@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+// Gradle never did anything special https://github.com/gradle/gradle/issues/1803
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter:3.3.0'
+}
+
+javadoc {
+    options {
+        links 'https://docs.spring.io/spring-boot/3.3/api/java/'
+
+    }
+}
